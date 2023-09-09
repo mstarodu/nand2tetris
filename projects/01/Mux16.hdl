@@ -15,4 +15,69 @@ CHIP Mux16 {
 
     PARTS:
     // Put your code here:
+Not(in=sel, out=Notsel);
+
+    And(a=a[0], b=Notsel, out=aAndNotsel0);
+    And(a=b[0], b=sel, out=bAndSel0);
+    Or(a=aAndNotsel0, b=bAndSel0, out=out[0]);
+
+    And(a=a[1], b=Notsel, out=aAndNotsel1);
+    And(a=b[1], b=sel, out=bAndSel1);
+    Or(a=aAndNotsel1, b=bAndSel1, out=out[1]);
+
+    And(a=a[2], b=Notsel, out=aAndNotsel2);
+    And(a=b[2], b=sel, out=bAndSel2);
+    Or(a=aAndNotsel2, b=bAndSel2, out=out[2]);
+
+    And(a=a[3], b=Notsel, out=aAndNotsel3);
+    And(a=b[3], b=sel, out=bAndSel3);
+    Or(a=aAndNotsel3, b=bAndSel3, out=out[3]);
+
+    And(a=a[4], b=Notsel, out=aAndNotsel4);
+    And(a=b[4], b=sel, out=bAndSel4);
+    Or(a=aAndNotsel4, b=bAndSel4, out=out[4]);
+
+    And(a=a[5], b=Notsel, out=aAndNotsel5);
+    And(a=b[5], b=sel, out=bAndSel5);
+    Or(a=aAndNotsel5, b=bAndSel5, out=out[5]);
+
+    And(a=a[6], b=Notsel, out=aAndNotsel6);
+    And(a=b[6], b=sel, out=bAndSel6);
+    Or(a=aAndNotsel6, b=bAndSel6, out=out[6]);
+
+    And(a=a[7], b=Notsel, out=aAndNotsel7);
+    And(a=b[7], b=sel, out=bAndSel7);
+    Or(a=aAndNotsel7, b=bAndSel7, out=out[7]);
+
+    And(a=a[8], b=Notsel, out=aAndNotsel8);
+    And(a=b[8], b=sel, out=bAndSel8);
+    Or(a=aAndNotsel8, b=bAndSel8, out=out[8]);
+
+    And(a=a[9], b=Notsel, out=aAndNotsel9);
+    And(a=b[9], b=sel, out=bAndSel9);
+    Or(a=aAndNotsel9, b=bAndSel9, out=out[9]);
+
+    And(a=a[10], b=Notsel, out=aAndNotsel10);
+    And(a=b[10], b=sel, out=bAndSel10);
+    Or(a=aAndNotsel10, b=bAndSel10, out=out[10]);
+
+    And(a=a[11], b=Notsel, out=aAndNotsel11);
+    And(a=b[11], b=sel, out=bAndSel11);
+    Or(a=aAndNotsel11, b=bAndSel11, out=out[11]);
+
+    And(a=a[12], b=Notsel, out=aAndNotsel12);
+    And(a=b[12], b=sel, out=bAndSel12);
+    Or(a=aAndNotsel12, b=bAndSel12, out=out[12]);
+
+    And(a=a[13], b=Notsel, out=aAndNotsel13);
+    And(a=b[13], b=sel, out=bAndSel13);
+    Or(a=aAndNotsel13, b=bAndSel13, out=out[13]);
+
+    And(a=a[14], b=Notsel, out=aAndNotsel14);
+    And(a=b[14], b=sel, out=bAndSel14);
+    Or(a=aAndNotsel14, b=bAndSel14, out=out[14]);
+
+    And(a=a[15], b=Notsel, out=aAndNotsel15);
+    And(a=b[15], b=sel, out=bAndSel15);
+    Or(a=aAndNotsel15, b=bAndSel15, out=out[15]);
 }
